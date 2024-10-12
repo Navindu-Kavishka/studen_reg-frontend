@@ -1,8 +1,21 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React,{useState} from 'react'
 
 
 const StudentForm = () => {
+
+    const [student,setStudent] = useState({
+        name: '',
+        age: '',
+        contactNumber: '',
+        guardianName: '',
+        guardianContactNumber: '',
+        address: ''
+    });
+
+    const handleSubmit = (event)=> {
+        event.preventDefault();
+    };
   
     return (
     <form onSubmit={null}>
