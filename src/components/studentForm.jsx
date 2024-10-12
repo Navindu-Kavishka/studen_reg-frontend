@@ -1,28 +1,34 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-const studentForm = () => {
+
+const StudentForm = () => {
   
     return (
     <form onSubmit={null}>
-        <h3>Register Student</h3>
+        <h4>Student Infomation</h4>
+        <hr />
         <div className="form-group">
             <label htmlFor="stdName">Name : </label>
-            <input type="text" name="name" id="stdName" required/>
+            <input type="text" name="name" id="stdName" required/><br />
 
             <label htmlFor="age">Age : </label>
-            <input type="text" name="age" id="age" required/>
+            <input type="text" name="age" id="age" required/><br />
             
             <label htmlFor="stdContact">Contact : </label>
-            <input type="text" name="stdContact" id="stdContact" required/>
+            <input type="text" name="stdContact" id="stdContact" required/><br /><br />
             
+            <h4>Guardian Infomation</h4>
+            <hr />
+
             <label htmlFor="guardianName">Name : </label>
-            <input type="text" name="guardianName" id="guardianName" required/>
+            <input type="text" name="guardianName" id="guardianName" required/><br />
             
             <label htmlFor="address">Address : </label>
-            <input type="text" name="address" id="address" required/>
+            <input type="text" name="address" id="address" required/><br />
             
-            <label htmlFor="guardianContact"></label>
-            <input type="text" name="guardianContact" id="guardianContact" required/>
+            <label htmlFor="guardianContact">Contact : </label>
+            <input type="text" name="guardianContact" id="guardianContact" required/><br />
 
         </div>
         <button type="submit" className='btn btn-primary mt-3'>Register</button>
@@ -31,4 +37,4 @@ const studentForm = () => {
 
 }
 
-export default studentForm
+export default StudentForm
